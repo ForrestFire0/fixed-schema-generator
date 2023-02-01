@@ -1,11 +1,12 @@
-import { defineConfig } from 'vite'
-import { svelte } from '@sveltejs/vite-plugin-svelte'
+import {defineConfig} from 'vite'
+import {svelte} from '@sveltejs/vite-plugin-svelte'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [svelte()],
-  build: {
-    outDir: 'docs',
-    emptyOutDir: true,
-  }
+    plugins: [svelte()],
+    base: '',
+    build: {
+        outDir: 'docs',
+        emptyOutDir: true,
+    }
 })
